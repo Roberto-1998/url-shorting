@@ -102,6 +102,9 @@ export const MenuListSm = styled.ul`
 
   hr {
     width: 100%;
+    height: 0.5px;
+    background-color: hsl(257, 7%, 63%);
+    border: none;
   }
 
   li {
