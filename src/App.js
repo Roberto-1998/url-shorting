@@ -1,7 +1,12 @@
 import React from 'react';
+import Navbar from './components/Navbar/Navbar';
 
 const App = () => {
-  return <h1>App</h1>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 };
 
 export default App;
