@@ -6,12 +6,13 @@ export const CustomButton = styled.button`
   border: none;
   font-weight: ${(props) => (props.size === 'full' ? '700' : 'none')};
 
-  padding: ${(props) => (props.size === 'full' ? '15px' : '6px 17px')};
-  border-radius: ${(props) => (props.size === 'full' ? '20px' : '13px')};
+  padding: ${(props) => (props.padding ? props.padding : '6px 17px')};
+  border-radius: ${(props) =>
+    props.borderRadius ? props.borderRadius : '13px'};
   cursor: pointer;
-  font-size: ${(props) => (props.size === 'full' ? '16px' : '12px')};
+  font-size: ${(props) => (props.fontSize ? props.fontSize : '12px')};
   &:hover {
     opacity: 0.6;
   }
-  width: ${(props) => (props.size === 'full' ? '80%' : '')};
+  width: ${(props) => props.width && props.width};
 `;
