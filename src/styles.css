@@ -11,11 +11,12 @@ body {
   width: 100%;
 }
 
-p,h1{
+p,
+h1 {
   padding: 0;
   margin: 0;
 }
 
-ul li{
+ul li {
   list-style: none;
 }
