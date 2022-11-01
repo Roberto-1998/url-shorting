@@ -49,17 +49,22 @@ export const AdvancedContent = styled.div`
 `;
 
 export const LineBox = styled.div`
-  display: none;
   position: absolute;
 
-  transform: translateY(-50%);
+  transform: translateY(50%) rotate(90deg);
   background-color: hsl(180, 66%, 49%);
   height: 8px;
-  width: 50%;
+  width: 80%;
   z-index: 1;
+
+  @media (min-width: 717px) {
+    display: none;
+  }
 
   @media (min-width: 1084px) {
     display: block;
+    width: 50%;
+    transform: translateY(0%) rotate(0deg);
   }
 `;
 
