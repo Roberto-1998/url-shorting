@@ -8,6 +8,7 @@ export const BannerBox = styled.section`
   padding: 0 20px;
   gap: 10px;
   margin-top: 40px;
+  padding-bottom: 200px;
 
   @media (min-width: 650px) {
     gap: 0;
