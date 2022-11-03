@@ -1,7 +1,16 @@
 import React from 'react';
 import { CustomButton } from './Button.styles';
 
-const Button = ({ children, size, width, padding, fontSize, borderRadius }) => {
+const Button = ({
+  children,
+  size,
+  width,
+  padding,
+  fontSize,
+  borderRadius,
+  onClick,
+  isCopied,
+}) => {
   return (
     <CustomButton
       width={width}
@@ -9,6 +18,8 @@ const Button = ({ children, size, width, padding, fontSize, borderRadius }) => {
       padding={padding}
       fontSize={fontSize}
       borderRadius={borderRadius}
+      onClick={onClick}
+      isCopied={isCopied}
     >
       {children}
     </CustomButton>

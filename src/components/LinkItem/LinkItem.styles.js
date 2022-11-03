@@ -9,6 +9,7 @@ export const LinkItemBox = styled.div`
   align-items: center;
   gap: 20px;
   width: 100%;
+  overflow: hidden;
 
   hr {
     flex-basis: 100%;
@@ -36,13 +37,13 @@ export const LinkItemBox = styled.div`
     hr {
       display: none;
     }
-    gap: 0;
+    gap: 0px;
     div:first-child {
-      flex-basis: 30%;
+      flex-basis: 20%;
     }
 
     div:last-child {
-      flex-basis: 70%;
+      flex-basis: 60%;
     }
   }
 `;
@@ -59,6 +60,7 @@ export const ShortLink = styled.div`
   }
 
   a {
+    font-size: 14px;
     color: hsl(180, 66%, 49%);
     cursor: pointer;
     text-decoration: none;
@@ -68,7 +70,7 @@ export const ShortLink = styled.div`
     align-items: center;
     justify-content: end;
     p {
-      flex-basis: 70%;
+      flex-basis: 30%;
     }
     button {
       flex-basis: 30%;

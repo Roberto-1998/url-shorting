@@ -16,19 +16,17 @@ const LinkForm = () => {
     resolver: yupResolver(linkSchema),
   });
 
-  const { mutate, data } = useCreateShortLink();
+  const { mutate } = useCreateShortLink();
   const { addLinks } = useLinks();
 
   const onSubmit = ({ link }) =>
     mutate(link, {
-      onSuccess: () => {
-        return (
-          data &&
+      onSuccess: (data) => {
+        data.data.result &&
           addLinks({
             originalLink: link,
             full_short_link: data.data.result.full_short_link,
-          })
-        );
+          });
       },
     });
 

@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const CustomButton = styled.button`
   color: white;
-  background-color: hsl(180, 66%, 49%);
+  background-color: ${(props) =>
+    props.isCopied ? 'hsl(257, 27%, 26%)' : 'hsl(180, 66%, 49%)'};
   border: none;
   font-weight: ${(props) => (props.size === 'full' ? '700' : 'none')};
 

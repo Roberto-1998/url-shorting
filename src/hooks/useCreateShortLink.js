@@ -1,4 +1,5 @@
 import { useMutation } from 'react-query';
+
 import { postLink } from '../services/link.service';
 
 const useCreateShortLink = () => {

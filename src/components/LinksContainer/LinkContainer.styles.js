@@ -14,10 +14,10 @@ export const LinkContainerBox = styled.div`
   }
 
   @media (min-width: 1000px) {
-    width: 60%;
+    width: 70%;
   }
 
   @media (min-width: 1500px) {
-    width: 50%;
+    width: 60%;
   }
 `;

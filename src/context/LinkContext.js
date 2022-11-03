@@ -3,13 +3,7 @@ import React, { createContext, useContext, useState } from 'react';
 const LinkContext = createContext({});
 
 const LinkProvider = ({ children }) => {
-  const [links, setLinks] = useState([
-    {
-      originalLink:
-        'https://minombreesrobertoestaesmghsdfdvrevfdsvrevervghnfhgniurlperomuylarga.com',
-      full_short_link: 'holi',
-    },
-  ]);
+  const [links, setLinks] = useState([]);
 
   const addLinks = (link) => {
     setLinks([...links, link]);

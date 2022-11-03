@@ -1,27 +1,15 @@
 import React from 'react';
 
-import {
-  AdvancedBox,
-  AdvancedContent,
-  CardsContainer,
-  Card,
-  LineBox,
-  ShortenBox,
-} from './Advanced.styles';
-import brand from '../../../public/images/icon-brand-recognition.svg';
+import { AdvancedBox, AdvancedContent } from './Advanced.styles';
 
-import records from '../../../public/images/icon-detailed-records.svg';
-
-import customizable from '../../../public/images/icon-fully-customizable.svg';
-import LinkForm from '../LinkForm/LinkForm';
 import LinksContainer from '../LinksContainer/LinksContainer';
+import ShortenContainer from '../ShortenContainer/ShortenContainer';
+import CardsContainer from '../CardsContainer/CardsContainer';
 
 const Advanced = () => {
   return (
     <AdvancedBox>
-      <ShortenBox>
-        <LinkForm />
-      </ShortenBox>
+      <ShortenContainer />
 
       <LinksContainer />
 
@@ -31,52 +19,9 @@ const Advanced = () => {
           Track how your links are performing across the web with our advanced
           statistics dashboard.
         </p>
-
-        <CardsContainer>
-          <LineBox></LineBox>
-          <Card>
-            <div>
-              <div>
-                <img src={brand} alt='Brand Recognition' />
-              </div>
-              <h4>Brand Recognition</h4>
-              <p>
-                Boost your brand recognition with each click. Generic links
-                don’t mean a thing. Branded links help instil confidence in your
-                content.
-              </p>
-            </div>
-          </Card>
-          <Card>
-            <div>
-              <div>
-                <img src={records} alt='Detailed Records' />
-              </div>
-
-              <h4>Detailed Records</h4>
-              <p>
-                Gain insights into who is clicking your links. Knowing when and
-                where people engage with your content helps inform better
-                decisions.
-              </p>
-            </div>
-          </Card>
-
-          <Card>
-            <div>
-              <div>
-                <img src={customizable} alt='Fully Customizable' />
-              </div>
-
-              <h4>Fully Customizable</h4>
-              <p>
-                Improve brand awareness and content discoverability through
-                customizable links, supercharging audience engagement.
-              </p>
-            </div>
-          </Card>
-        </CardsContainer>
       </AdvancedContent>
+
+      <CardsContainer />
     </AdvancedBox>
   );
 };
