@@ -10,7 +10,9 @@ export const CustomButton = styled.button`
   border-radius: ${(props) =>
     props.borderRadius ? props.borderRadius : '13px'};
   cursor: pointer;
+
   font-size: ${(props) => (props.fontSize ? props.fontSize : '12px')};
+
   &:hover {
     opacity: 0.6;
   }

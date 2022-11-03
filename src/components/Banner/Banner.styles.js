@@ -5,13 +5,14 @@ export const BannerBox = styled.section`
   flex-wrap: wrap-reverse;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
-  gap: 10px;
+
+  gap: 30px;
   margin-top: 40px;
-  padding-bottom: 200px;
+  padding-bottom: 160px;
 
   @media (min-width: 650px) {
     gap: 0;
+    padding-bottom: 150px;
   }
 `;
 
@@ -62,10 +63,14 @@ export const TextBox = styled.div`
 export const ImageBox = styled.div`
   width: 100%;
 
+  display: flex;
+  justify-content: end;
+
   img {
     object-fit: contain;
-    width: 100%;
-    object-position: 145px center;
+    width: 90%;
+
+    object-position: 145px;
   }
 
   @media (min-width: 650px) {
@@ -73,6 +78,7 @@ export const ImageBox = styled.div`
 
     img {
       object-position: 50px center;
+      width: 80%;
     }
   }
 `;

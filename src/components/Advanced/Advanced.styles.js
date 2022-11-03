@@ -1,7 +1,10 @@
 import styled from 'styled-components';
+import backMovil from '../../../public/images/bg-shorten-mobile.svg';
+import backDesktop from '../../../public/images/bg-shorten-desktop.svg';
 
 export const AdvancedBox = styled.section`
   width: 100%;
+  position: relative;
   background-color: #f0f1f6;
   padding: 100px 0 80px;
 `;
@@ -9,6 +12,7 @@ export const AdvancedBox = styled.section`
 export const AdvancedContent = styled.div`
   width: 90%;
   margin: 0 auto;
+  padding-top: 50px;
 
   h1,
   p {
@@ -146,5 +150,38 @@ export const Card = styled.div`
         width: 30px;
       }
     }
+  }
+`;
+
+export const ShortenBox = styled.div`
+  position: absolute;
+  top: -90px;
+  right: 0;
+  left: 0;
+  width: 90%;
+  background-color: #3a3053;
+  border-radius: 10px;
+  margin: 0 auto;
+
+  padding: 30px;
+
+  background-image: url(${backMovil});
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-width: 650px) {
+    background-image: url(${backDesktop});
+    top: -50px;
+    width: 80%;
+    gap: 0px;
+  }
+
+  @media (min-width: 1000px) {
+    width: 60%;
+  }
+
+  @media (min-width: 1500px) {
+    width: 50%;
   }
 `;

@@ -1,20 +1,30 @@
 import React from 'react';
+
 import {
   AdvancedBox,
   AdvancedContent,
   CardsContainer,
   Card,
   LineBox,
-} from './Advanced..styles';
+  ShortenBox,
+} from './Advanced.styles';
 import brand from '../../../public/images/icon-brand-recognition.svg';
 
 import records from '../../../public/images/icon-detailed-records.svg';
 
 import customizable from '../../../public/images/icon-fully-customizable.svg';
+import LinkForm from '../LinkForm/LinkForm';
+import LinksContainer from '../LinksContainer/LinksContainer';
 
 const Advanced = () => {
   return (
     <AdvancedBox>
+      <ShortenBox>
+        <LinkForm />
+      </ShortenBox>
+
+      <LinksContainer />
+
       <AdvancedContent>
         <h1>Advanced Statistics</h1>
         <p>
