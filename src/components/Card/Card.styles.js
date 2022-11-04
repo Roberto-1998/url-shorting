@@ -8,9 +8,10 @@ export const CardBox = styled.div`
 
   p {
     font-size: 14px;
-    color: hsl(257, 7%, 63%);
+    color: hsl(0, 0%, 75%);
     line-height: 1.5;
     text-align: center;
+    font-weight: normal;
   }
 
   :nth-child(2) {
