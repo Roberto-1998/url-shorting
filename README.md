@@ -43,7 +43,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Roberto-1998)
+- Solution URL: [Add solution URL here](https://github.com/Roberto-1998/url-shorting)
 - Live Site URL: [Add live site URL here](https://url-shorting-peach.vercel.app/)
 
 ## My process
