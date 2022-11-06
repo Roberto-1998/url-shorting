@@ -24,7 +24,7 @@ export const TextBox = styled.div`
   gap: 20px;
 
   h1 {
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     line-height: 1.1;
     font-weight: 700;

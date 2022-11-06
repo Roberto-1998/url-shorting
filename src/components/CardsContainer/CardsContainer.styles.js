@@ -27,7 +27,7 @@ export const LineBox = styled.div`
     display: none;
   }
 
-  @media (min-width: 960px) {
+  @media (min-width: 1200px) {
     display: block;
     width: 50%;
     transform: translateY(0%) rotate(0deg);

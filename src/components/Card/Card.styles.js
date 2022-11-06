@@ -33,7 +33,7 @@ export const CardBox = styled.div`
     }
   }
 
-  @media (min-width: 960px) {
+  @media (min-width: 1200px) {
     &,
     :nth-child(2) {
       margin-top: 0px;

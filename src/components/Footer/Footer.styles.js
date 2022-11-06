@@ -45,6 +45,7 @@ export const FooterBox = styled.footer`
 
       img {
         width: 18px;
+        cursor: pointer;
       }
     }
   }
